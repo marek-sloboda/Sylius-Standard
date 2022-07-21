@@ -19,7 +19,7 @@ class Product extends BaseProduct
      * @ORM\Column(type="string", length=128, nullable=true)
      */
     #[ORM\Column(type: "string", Length: 128, nullable: true)]
-    private string $colour;
+    private null|string $colour;
 
     protected function createTranslation(): ProductTranslationInterface
     {
